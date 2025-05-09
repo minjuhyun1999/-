@@ -24,6 +24,13 @@
         
         @keyframes zoomSlow {
     from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.2);
+    }
+} @keyframes zoomSlow1 {
+    from {
         transform: scale(1);
     }
     to {
@@ -106,7 +113,7 @@
             /* 테두리 뒤에 배경이 보이도록 설정 가능 */
             border-radius: 5px;
             /* 모서리 둥글게 (선택사항) */
-            animation: zoomSlow 3s ease-in-out infinite alternate;
+            animation: zoomSlow1 7s ease-in-out infinite alternate;
     
 
 
@@ -126,12 +133,13 @@
             justify-content: center;
             align-items: center;
             color: rgb(32, 32, 32);
+             animation: zoomSlow 3s ease-in-out infinite alternate;
 
 
         }
     </style>
 
-    <div class="cola">사진첩</div>
+    <div class="cola">동물들</div>
     <div class="gallery">
 
 
@@ -152,7 +160,7 @@
 
     </div>
 
-    <div class="cola">상품목록</div>
+    <div class="cola">육류</div>
 
     <div class="gallery2">
         <img src="emg/고기1 (1).jpg">

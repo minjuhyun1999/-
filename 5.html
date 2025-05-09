@@ -6,10 +6,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+.gallery {
 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* row-gap: 20px; */
+            /* column-gap: 20px; */
+            gap: 20px;
+            border: 4px solid rgb(83, 183, 223);
+            padding: 20px;
+            margin: 50px;
+            background-color: rgb(125, 110, 160);
+            border-radius: 10px;
+         
+
+        }
+
+
+
+
+
+</style>
 <body>
     <h1><a href="index.html" title="웹">WEB</a></h1>
-    <ol>
+    <ol class="gallery">
         <li><a href="1.html" title="html">HTML</a></li>
         <li><a href="2.html" title="CSS">CSS</a></li>
         <li><a href="3.html" title="JavaScript">JavaScript</a></li>
@@ -17,7 +38,6 @@
         <li><a href="5.html" title="상세">상세내용</a></li>
         <li><a href="6.html" title="이미지">사진첩</a></li>
         <li><a href="7.html" title="애니메이션">애니메이션</a></li>
-
     </ol>
     <h2>HTML이란 무엇인가?</h2>
     <p>상세한 내용이 담길 예정</p>

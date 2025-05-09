@@ -21,6 +21,16 @@
 
 
     <style>
+        
+        @keyframes zoomSlow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
         .gallery {
 
             display: grid;
@@ -33,6 +43,7 @@
             margin: 50px;
             background-color: rgb(125, 110, 160);
             border-radius: 10px;
+         
 
         }
 
@@ -52,12 +63,14 @@
             border-radius: 5px;
             /* 모서리 둥글게 (선택사항) */
             cursor: pointer;
+        
+    
         }
 
         .gallery img:hover {
-            filter: brightness(120%);
-            transition: filter 0.2s ease;
-            transform: scale(1.03);
+            transform: scale(1.05) rotateZ(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
         }
 
 
@@ -93,14 +106,16 @@
             /* 테두리 뒤에 배경이 보이도록 설정 가능 */
             border-radius: 5px;
             /* 모서리 둥글게 (선택사항) */
+            animation: zoomSlow 3s ease-in-out infinite alternate;
+    
 
 
         }
 
         .gallery2 img:hover {
-            filter: brightness(120%);
-            transition: filter 0.2s ease;
-            transform: scale(1.03);
+            transform: scale(1.05) rotateZ(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
         }
 
 
